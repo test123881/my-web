@@ -1,16 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>森林木的网站</title>
-  </head>
 
-  <body>
-    <img src="1.jpg" width="200" height="200" />
-    <p>你好</p>
-    <p>这里是森林木的网站</p>
-    <p>这是一个简单的HTML页面示例，包含一个图片和一些文本内容。</p>
-  </body>
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>森林木的网站</title>
+    <style>
+        /* 页面的整体布局 */
+        body {
+            display: flex;
+            margin: 100px;
+            color: blueviolet;
+            background: antiquewhite;
+            align-items: center;
+        }
+
+        /* 右侧文字容器的样式 */
+        .container {
+            text-align: center;
+            margin-left: 30px;
+            /* 图片和文字之间留点空隙 */
+        }
+
+        /* 特殊文字的颜色 */
+        .he {
+            color: chocolate ;
+            /* 这里替换成你在浏览器里看到的颜色 */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="1.jpg" width="200" height="200">
+        <p class="he">你好</p>
+        <p class="he">这里是森林木的网站</p>
+        <p>这是一个简单的HTML页面示例，包含一个图片和一些文本内容。</p>
+    </div>
+
+</body>
+
 </html>
