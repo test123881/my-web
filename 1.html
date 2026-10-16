@@ -1,54 +1,82 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <style>
+</head>
+<style>
+    html{
+        height: 100%;
+    }
     body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
     .zhongjian {
-      text-align: center;
+        text-align: center;
     }
+
     .ding {
-      background-color: hwb(179 0% 0%);
-      height: 80px;
+        background-color: hwb(179 0% 0%);
+        height: 80px;
     }
+
     .yuan {
-      width: 120px; /* 固定宽高，必须设置！ */
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover; /*  关键：图片等比例缩放，填满圆形区域，超出部分裁剪，防止拉伸变形 */
-      border: 5px
-       solid lab(56.47% 11.01 -63.67 / 0.934); /* 可选：添加边框 */
-  
+        width: 120px;
+        /* 固定宽高，必须设置！ */
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        /*  关键：图片等比例缩放，填满圆形区域，超出部分裁剪，防止拉伸变形 */
+        border: 5px solid lab(56.47% 11.01 -63.67 / 0.934);
+        /* 可选：添加边框 */
+
     }
+
     .bian {
-      border: 5px solid #b5cbd8ee;
+        border: 5px solid #b5cbd8ee;
     }
-    .bai{
+
+    .bai {
         background-color: rgb(123, 206, 225);
     }
-  </style>
-  <body>
-    <div class="ding zhongjian">
-      <h1>welcome to my website</h1>
+
+    
+
+    .warg {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <div class="warg">
+        <div class="ding zhongjian">
+            <h1>welcome to my website</h1>
+        </div>
+        <br />
+        <div class="zhongjian">
+            <img class="yuan" src="1.jpg" width="200" height="200" />
+
+        </div>
+        <div class="bai zhongjian bian " style="margin: 20px; padding: 20px; height: 200px; width: 400px;">
+            <h1 style="color: #333; font-size: 24px  ;">这里是森林木的网站</h1>
+            <p style="color: #666; font-size: 16px;">当前正在学习如何制作自己的网站，欢迎大家访问我的网站！</p>
+
+        </div>
     </div>
-    <br />
     <div class="zhongjian">
-      <img class="yuan" src="1.jpg" width="200" height="200" />
-     
+        <h1 style="color: #706a6a; font-size: 24px;">联系方式</h1>
+        <p style="color: #666; font-size: 16px;">邮箱：example@email.com</p>
     </div>
-    <div class="bai zhongjian bian " style="margin: 20px; padding: 20px; height: 200px; width: 400px;">
-      <h1 style="color: #333; font-size: 24px  ;">这里是森林木的网站</h1>
-        <p style="color: #666; font-size: 16px;">当前正在学习如何制作自己的网站，欢迎大家访问我的网站！</p>
+</body>
 
-
-    </div>
-  </body>
 </html>
