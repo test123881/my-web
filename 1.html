@@ -25,9 +25,11 @@
         text-align: center;
     }
 
-    .ding {
+    .top {
         background-color: hwb(179 0% 0%);
         height: 80px;
+        align-self: stretch/* 让顶部区域占满整个宽度 */;
+        border-bottom: 2px solid hsl(0, 8%, 76%);
     }
 
     .yuan {
@@ -58,10 +60,12 @@
 </style>
 
 <body>
+    <div class="top zhongjian">
+        <h1>welcome to my website</h1>
+    </div>
+    <br />
     <div class="warg">
-        <div class="ding zhongjian">
-            <h1>welcome to my website</h1>
-        </div>
+        
         <br />
         <div class="zhongjian">
             <img class="yuan" src="1.jpg" width="200" height="200" />
